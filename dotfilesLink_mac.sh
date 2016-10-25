@@ -13,6 +13,7 @@ while :; do
         ln -s ~/dotfiles/.dein.toml ~/.dein.toml
         ln -s ~/dotfiles/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
         ln -s ~/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+        break
     else
         echo "Please input y or n"
     fi
