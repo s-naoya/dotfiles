@@ -7,11 +7,16 @@
 	[
 		"All Autocomplete",
 		"AutoFileName",
+        "Codecs33",
+        "ConvertToUTF8",
+        "LatexTools",
 		"Markdown Extended",
 		"Monokai Extended",
 		"OmniMarkupPreviewer",
 		"Package Control",
 		"SublimeCodeIntel",
+        "Tag",
+        "Terminal",
 		"SublimeMozcInput",
 		"Theme - Flatland"
 	],
