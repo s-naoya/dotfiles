@@ -1,0 +1,19 @@
+{
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"draw_white_space": "all",
+	"font_face": "Ubuntu mono",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Theme - Cobalt2",
+		"Vintage"
+	],
+	"line_padding_top": 2,
+	"show_encoding": true,
+	"spell_check": false,
+	"tab_size": 4,
+	"theme": "Flatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
