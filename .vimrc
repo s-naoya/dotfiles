@@ -72,8 +72,7 @@ nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
 
-" バックスペースキー有効化j
-set backspace=indent,eol,start
+set backspace=indent,eol,start " バックスペースキー有効化
 set showmatch "カッコの対応関係を一瞬表示
 source $VIMRUNTIME/macros/matchit.vim "[%]を拡張
 
