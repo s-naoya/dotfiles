@@ -1,19 +1,24 @@
 {
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"draw_white_space": "all",
-	"font_face": "Ubuntu mono",
-	"font_size": 11,
+	"font_face": "Ricty Regular",
+	"font_size": 13,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Theme - Cobalt2",
 		"Vintage"
 	],
-	"line_padding_top": 2,
+	"line_padding_top": 4,
+	"open_files_in_new_window": false,
+	"scroll_past_end": true,
 	"show_encoding": true,
+	"show_full_path": true,
 	"spell_check": false,
 	"tab_size": 4,
 	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
 	"word_wrap": false
 }
