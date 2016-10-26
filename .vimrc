@@ -1,5 +1,9 @@
 " main vimrc
 " 2016/10/25 create by Saito Naoya
+
+"""""""""""""""""""""""""""""""
+" dein setup
+"""""""""""""""""""""""""""""""
 if !&compatible
   set nocompatible
 endif
@@ -31,16 +35,72 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 " }}}
+""""""""""""""""""""""""""""""""""
+" finish dein setup
+""""""""""""""""""""""""""""""""""
 
+
+""""""""""""""""""""""""""""""""""
+" molokai
+""""""""""""""""""""""""""""""""""
+syntax on
+colorscheme molokai
+set t_Co=256
+""""""""""""""""""""""""""""""""""
+" finish molokai
+""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""
+" neocomplcache
+""""""""""""""""""""""""""""""""""
+let g:acp_enableAtStartup = 0 " AutoComplPop無効化
+let g:neocomplcache_enable_at_startup = 1 " neocomplcacheを起動時に有効化
+let g:neocomplcache_enable_smart_case = 1 " 大文字が入力されるまで区別しない
+let g:neocomplcache_min_syntax_length = 3 " シンタックスキャッシュ時の最小文字長を3に
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+" Define dictionary.
+let g:neocomplcache_dictionary_filetype_lists = {
+    \ 'default' : ''
+    \ }
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplcache#undo_completion()
+inoremap <expr><C-l>     neocomplcache#complete_common_string()
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return neocomplcache#smart_close_popup() . "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>  neocomplcache#close_popup()
+inoremap <expr><C-e>  neocomplcache#cancel_popup()
+
+""""""""""""""""""""""""""""""""""
+" neocomplcache
+""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""
+" lightline.vim
+""""""""""""""""""""""""""""""""""
+let g:lightline = {
+    \ 'colorsheme': 'wombat'
+    \ }
+""""""""""""""""""""""""""""""""""
+" finish lightline.vim
+""""""""""""""""""""""""""""""""""
 
 
 set encoding=utf-8 "文字コードをUTF-8に設定
 scriptencoding utf-8
 
-" molokai
-syntax on
-colorscheme molokai
-set t_Co=256
 
 set fileencoding=utf-8
 set fileencodings=ucs-boms,utf-8,euc-jp,cp932 "読み込み時の文字コードの自動判別. 左側優先
@@ -120,15 +180,6 @@ set helplang=en
 
 
 "ステータスライン
-set statusline=%F  "ファイル名表示
-set statusline+=%m "変更チェック表示
-set statusline+=%r "読み込み可能かどうか表示
-set statusline+=%h "ヘルプページなら[HELP]と表示
-set statusline+=%w "プレビューウィンドウなら[Prevew]と表示
-set statusline+=%= "これ以降は右寄せ表示
-set statusline+=[%{&fileencoding}] "文字コード表示
-set statusline+=[%Y] "ファイルタイプ
-set statusline+=[%l/%L] "現在行数/全行数
 set laststatus=2
 
 
@@ -147,37 +198,3 @@ if has('syntax')
 endif
 
 
-"""""""""""""""""""""
-" neocomplcache
-"""""""""""""""""""""
-let g:acp_enableAtStartup = 0 " AutoComplPop無効化
-let g:neocomplcache_enable_at_startup = 1 " neocomplcacheを起動時に有効化
-let g:neocomplcache_enable_smart_case = 1 " 大文字が入力されるまで区別しない
-let g:neocomplcache_min_syntax_length = 3 " シンタックスキャッシュ時の最小文字長を3に
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-
-" Define dictionary.
-let g:neocomplcache_dictionary_filetype_lists = {
-    \ 'default' : ''
-    \ }
-
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplcache#undo_completion()
-inoremap <expr><C-l>     neocomplcache#complete_common_string()
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return neocomplcache#smart_close_popup() . "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
-""""""""""""""""""""""
-" neocomplcache
-""""""""""""""""""""""
