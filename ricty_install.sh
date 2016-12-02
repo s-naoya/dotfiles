@@ -20,7 +20,7 @@ chmod +x ricty_generator.sh
 ./ricty_generator.sh auto
 
 mkdir ~/.fonts
-cp ricty*.ttf ~/.fonts
+cp Ricty*.ttf ~/.fonts
 cd
 rm -rf ~/.makericty
 
