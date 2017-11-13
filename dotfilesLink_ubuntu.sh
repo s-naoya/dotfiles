@@ -5,8 +5,8 @@ while :; do
     if [ "${isOver}" = "y" ]; then
         ln -fs ~/dotfiles/.vimrc ~/.vimrc
         ln -fs ~/dotfiles/.dein.toml ~/.dein.toml
-        ln -fs ~/dotfiles/Package\ Control.sublime-settings ~/.config/sublime-text-3/Packages/User
-        ln -fs ~/dotfiles/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User
+       ln -fs ~/dotfiles/Package\ Control.sublime-settings ~/.config/sublime-text-3/Packages/User
+       ln -fs ~/dotfiles/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User
         break
     elif [ "${isOver}" = "n" ]; then
         ln -s ~/dotfiles/.vimrc ~/.vimrc
