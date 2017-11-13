@@ -1,0 +1,65 @@
+---
+homebrew_taps:
+  - { tap: caskroom/cask }
+  - { tap: homebrew/binary }
+  - { tap: homebrew/dupes }
+  - { tap: caskroom/fonts }
+  - { tap: caskroom/versions }
+  - { tap: sanemat/font }
+  - { tap: kevwil/patches }
+  - { tap: bfontaine/utils }
+  - { tap: caarlos0/antibody }
+  - { tap: caius/jo }
+  - { tap: classmethod/repos }
+
+homebrew_cask_packages:
+  - { name: iterm2 }
+  - { name: google-chrome }
+  - { name: google-japanese-ime }
+  - { name: java }
+  - { name: karabiner-elements }
+  - { name: xquartz }
+  - { name: alfred }
+  - { name: virtualbox}
+  - { name: caffeine}
+  - { name: clipy}
+  - { name: thunderbird}
+  - { name: dropbox}
+  - { name: appcleaner}
+  - { name: imageoptim}
+  - { name: musescore}
+  - { name: filezilla}
+  - { name: visual-studio-code}
+  - { name: avast-security}
+  - { name: the-unarchiver}
+  - { name: duet}
+  - { name: basictex}
+  - { name: adobe-creative-cloud}
+  - { name: font-ricty-diminished}
+
+homebrew_packages:
+  - { name: cask }
+  - { name: libxml2 }
+  - { name: glib }
+  - { name: fontconfig }
+  - { name: readline }
+  - { name: openssl }
+  - { name: python }
+  - { name: python3 }
+  - { name: coreutils }
+  - { name: git }
+  - { name: wget }
+  - { name: curl }
+  - { name: cmake }
+  - { name: autoconf }
+  - { name: automake }
+  - { name: pkg-config }
+  - { name: ctags }
+  - { name: tree }
+  - { name: nkf }
+  - { name: sha2 }
+  - { name: bash }
+  - { name: freetype }
+  - { name: argon/mas/mas }
+  - { name: ffmpeg }
+  - { name: vim }

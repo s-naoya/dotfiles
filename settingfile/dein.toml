@@ -12,7 +12,7 @@ repo = 'tomasr/molokai'
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
-repo = 'Shougo/neocomplcache'
+repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
