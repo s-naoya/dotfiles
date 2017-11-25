@@ -1,0 +1,37 @@
+[global_config]
+[keybindings]
+  next_tab = <Primary>Right
+  go_up = <Primary>Up
+  move_tab_right = <Primary>h
+  switch_to_tab_1 = <Primary>1
+  split_horiz = <Super>d
+  go_prev = <Primary>Up
+  prev_tab = <Primary>Left
+  go_down = <Primary>Down
+  switch_to_tab_2 = <Primary>2
+  switch_to_tab_3 = <Primary>3
+  split_vert = <Shift><Super>d
+  move_tab_left = <Primary>l
+  go_next = <Primary>Down
+  switch_to_tab_4 = <Primary>4
+[profiles]
+  [[default]]
+    palette = "#2a2e33:#b84d51:#b3bf5a:#e4b55e:#6e90b0:#a17eac:#7fbfb4:#b5b9b6:#1d1f22:#8d2e32:#798431:#e58a50:#4b6b88:#6e5079:#4d7b74:#5a626a"
+    background_image = None
+    background_darkness = 0.91
+    scrollback_lines = 5000
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#b7bcba"
+    foreground_color = "#b7bcba"
+    font = Ricty Diminished 12
+    background_color = "#161719"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
