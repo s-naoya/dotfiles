@@ -225,8 +225,8 @@ if has('syntax')
 endif
 
 " NERDTree自動起動
-autocmd VimEnter * execute 'NERDTree'
-nnoremap <silent><C-e> :NERDTree<CR>
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><S-e> :NERDTree<CR>
 nnoremap s <Nop>
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
