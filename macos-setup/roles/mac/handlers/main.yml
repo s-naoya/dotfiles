@@ -11,4 +11,4 @@
   shell: |
     plutil -convert binary1 -o "{{ user_dir }}/Library/Preferences/com.googlecode.iterm2.plist" ./com.googlecode.iterm2.plist
   args:
-    chdir: roles/mac/files/Library/Preferences
+    chdir: ../settingfile
