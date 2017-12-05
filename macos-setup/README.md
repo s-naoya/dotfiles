@@ -1,8 +1,6 @@
 Mac OS X Setup
 ==============
 
-* Buy [Mac OS X](http://www.apple.com/jp/mac/) with US keyboard
-
 * Update system
 
 ```bash
@@ -48,10 +46,10 @@ $ xcode-select --install
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-* Clone [my mac os x setup repository](https://github.com/knakayama/mac-os-x-setup)
+* Clone [my mac os x setup repository](https://github.com/NaoyaSaito/dotfiles)
 
 ```bash
-$ git clone https://github.com/knakayama/mac-os-x-setup ~/ghq/github.com/knakayama/mac-os-x-setup
+$ git clone https://github.com/NaoyaSaito/dotfiles ~dotfiles
 ```
 
 * Run [Ansible](https://github.com/ansible/ansible)
@@ -60,6 +58,12 @@ $ git clone https://github.com/knakayama/mac-os-x-setup ~/ghq/github.com/knakaya
 $ pip install -r requirements.txt
 $ ./run
 ```
+
+* Manual install
+- BettorSnapTool
+- BetterTouchTool
+- some AppStore app
+
 
 <!-- * add japanese input method
 
@@ -98,3 +102,5 @@ $ sudo launchctl load /System/Library/LaunchDaemons/ssh.plist
 3. Setup network manually
 4. Add DNS
 ``` -->
+
+

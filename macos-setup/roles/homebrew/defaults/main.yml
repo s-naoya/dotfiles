@@ -10,14 +10,12 @@ homebrew_taps:
   - { tap: bfontaine/utils }
   - { tap: caarlos0/antibody }
   - { tap: caius/jo }
-  - { tap: classmethod/repos }
 
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
   - { name: google-japanese-ime }
   - { name: java }
-  - { name: karabiner-elements }
   - { name: xquartz }
   - { name: alfred }
   - { name: virtualbox}
@@ -30,12 +28,16 @@ homebrew_cask_packages:
   - { name: musescore}
   - { name: filezilla}
   - { name: visual-studio-code}
-  - { name: avast-security}
   - { name: the-unarchiver}
   - { name: duet}
   - { name: basictex}
   - { name: adobe-creative-cloud}
   - { name: font-ricty-diminished}
+  - { name: microsoft-office}
+  - { name: firefox}
+  - { name: clipy}
+  - { name: vox}
+  - { name: skim}
 
 homebrew_packages:
   - { name: cask }
