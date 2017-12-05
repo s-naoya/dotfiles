@@ -1,9 +1,11 @@
 ---
 ghq_root: "{{ user_dir }}/dotfiles/repo"
 
-# git_repositories:
-#   - { repo: "https://github.com/edihbrandon/RictyDiminished.git", dest: "{{ ghq_root }}/edihbrandon/RictyDiminished" }
+git_repositories:
+  - { repo: "https://github.com/sorin-ionescu/prezto.git", dest: "{{ user_dir }}/.zprezto" }
 
 symlinks:
   - { src: "{{ ansible_dir }}/../settingfile/vimrc", dest: "{{ user_dir }}/.vimrc" }
   - { src: "{{ ansible_dir }}/../settingfile/dein.toml", dest: "{{ user_dir }}/.dein.toml" }
+  - { src: "{{ ansible_dir }}/../settingfile/latexmkrc", dest: "{{ user_dir }}/.latexmkrc" }
+  - { src: "{{ ansible_dir }}/../settingfile/zpreztorc", dest: "{{ user_dir }}/.zpreztorc" }
