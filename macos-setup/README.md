@@ -34,6 +34,18 @@ $ sudo shutdown -r now
 6. Dismiss keyboard brightness
 ```
 
+* SIP disable
+For edit permissions of /usr/local
+
+In recovery mode(command + r when boot)
+```bash
+csrutil disable
+```
+If enable
+```bash
+csrutil enable
+```
+
 * Install Xcode
 
 ```bash

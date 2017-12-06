@@ -8,4 +8,9 @@ symlinks:
   - { src: "{{ ansible_dir }}/../settingfile/vimrc", dest: "{{ user_dir }}/.vimrc" }
   - { src: "{{ ansible_dir }}/../settingfile/dein.toml", dest: "{{ user_dir }}/.dein.toml" }
   - { src: "{{ ansible_dir }}/../settingfile/latexmkrc", dest: "{{ user_dir }}/.latexmkrc" }
+  - { src: "{{ user_dir }}/.zprezto/runcoms/zlogin", dest: "{{ user_dir }}/.zlogin" }
+  - { src: "{{ user_dir }}/.zprezto/runcoms/zlogout", dest: "{{ user_dir }}/.zlogout" }
+  - { src: "{{ user_dir }}/.zprezto/runcoms/zprofile", dest: "{{ user_dir }}/.zprofile" }
+  - { src: "{{ user_dir }}/.zprezto/runcoms/zshenv", dest: "{{ user_dir }}/.zshenv" }
+  - { src: "{{ user_dir }}/.zprezto/runcoms/zshrc", dest: "{{ user_dir }}/.zshrc" }
   - { src: "{{ ansible_dir }}/../settingfile/zpreztorc", dest: "{{ user_dir }}/.zpreztorc" }

@@ -28,7 +28,7 @@ homebrew_cask_packages:
   - { name: musescore}
   - { name: filezilla}
   - { name: visual-studio-code}
-  - { name: the-unarchiver}
+#  - { name: the-unarchiver}
   - { name: duet}
   - { name: basictex}
   - { name: adobe-creative-cloud}
@@ -61,6 +61,7 @@ homebrew_packages:
   - { name: nkf }
   - { name: sha2 }
   - { name: bash }
+  - { name: zsh }
   - { name: freetype }
   - { name: argon/mas/mas }
   - { name: ffmpeg }
