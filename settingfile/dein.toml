@@ -16,3 +16,9 @@ repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'rhysd/vim-clang-format'
+
+[[plugins]]
+repo = 'kana/vim-operator-user'

@@ -126,6 +126,19 @@ let g:lightline = {'colorsheme': 'wombat'}
 " finish lightline.vim
 """"""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""
+" vim-clang-format
+""""""""""""""""""""""""""""""""""
+map <silent><Leader>x <Plug>(operator-evalruby)
+let g:clang_format#command = "clang-format-3.4"
+let g:clang_format#code_style = "Google"
+let g:clang_format#style_options = {
+\ "IndentWidth": 2,
+\ "AllowShortBlocksOnASingleLine": "true"
+\}
+""""""""""""""""""""""""""""""""""
+" finish vim-clang-format
+""""""""""""""""""""""""""""""""""
 
 set encoding=utf-8 "文字コードをUTF-8に設定
 scriptencoding utf-8
