@@ -65,4 +65,4 @@ homebrew_packages:
   - { name: freetype }
   - { name: argon/mas/mas }
   - { name: ffmpeg }
-  - { name: vim }
+  - { name: vim, install_options: --with-lua }
