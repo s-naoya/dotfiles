@@ -273,7 +273,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 273 796 473 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>564 23 1004 754 0 0 1280 777 </string>
+	<string>0 292 850 477 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>152 50 570 402 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -963,6 +965,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/naoya/dotfiles/settingfile</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -972,7 +976,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-20T13:24:12Z</date>
+	<date>2018-01-22T09:25:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -982,6 +986,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.5.beta.2</string>
+	<string>3.1.5</string>
 </dict>
 </plist>
