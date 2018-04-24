@@ -1,8 +1,6 @@
 ---
 homebrew_taps:
   - { tap: caskroom/cask }
-  - { tap: homebrew/binary }
-  - { tap: homebrew/dupes }
   - { tap: caskroom/fonts }
   - { tap: caskroom/versions }
   - { tap: sanemat/font }
@@ -26,7 +24,6 @@ homebrew_cask_packages:
   - { name: appcleaner}
   - { name: imageoptim}
   - { name: musescore}
-  - { name: filezilla}
   - { name: visual-studio-code}
 #  - { name: the-unarchiver}
   - { name: duet}
@@ -35,7 +32,6 @@ homebrew_cask_packages:
   - { name: font-ricty-diminished}
   - { name: microsoft-office}
   - { name: firefox}
-  - { name: clipy}
   - { name: vox}
   - { name: skim}
 
