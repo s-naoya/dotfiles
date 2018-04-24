@@ -12,5 +12,5 @@ symlinks:
   - { src: "{{ user_dir }}/.zprezto/runcoms/zlogout", dest: "{{ user_dir }}/.zlogout" }
   - { src: "{{ user_dir }}/.zprezto/runcoms/zprofile", dest: "{{ user_dir }}/.zprofile" }
   - { src: "{{ user_dir }}/.zprezto/runcoms/zshenv", dest: "{{ user_dir }}/.zshenv" }
-  - { src: "{{ user_dir }}/.zprezto/runcoms/zshrc", dest: "{{ user_dir }}/.zshrc" }
   - { src: "{{ ansible_dir }}/../settingfile/zpreztorc", dest: "{{ user_dir }}/.zpreztorc" }
+  - { src: "{{ ansible_dir }}/../settingfile/zshrc", dest: "{{ user_dir }}/.zshrc" }
