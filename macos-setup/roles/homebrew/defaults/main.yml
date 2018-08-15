@@ -1,8 +1,7 @@
 ---
 homebrew_taps:
-  - { tap: caskroom/cask }
-  - { tap: caskroom/fonts }
-  - { tap: caskroom/versions }
+  - { tap: homebrew/cask-versions }
+  - { tap: homebrew/cask-fonts }
   - { tap: sanemat/font }
   - { tap: kevwil/patches }
   - { tap: bfontaine/utils }
@@ -16,8 +15,7 @@ homebrew_cask_packages:
   - { name: java }
   - { name: xquartz }
   - { name: alfred }
-  - { name: virtualbox}
-  - { name: caffeine}
+#  - { name: caffeine}
   - { name: clipy}
   - { name: thunderbird}
   - { name: dropbox}
@@ -25,15 +23,15 @@ homebrew_cask_packages:
   - { name: imageoptim}
   - { name: musescore}
   - { name: visual-studio-code}
-#  - { name: the-unarchiver}
   - { name: duet}
   - { name: basictex}
   - { name: adobe-creative-cloud}
   - { name: font-ricty-diminished}
-  - { name: microsoft-office}
-  - { name: firefox}
+#  - { name: microsoft-office}
+#  - { name: firefox}
   - { name: vox}
   - { name: skim}
+  - { name: pycharm }
 
 homebrew_packages:
   - { name: cask }
@@ -44,6 +42,7 @@ homebrew_packages:
   - { name: openssl }
   - { name: python }
   - { name: python3 }
+  - { name: pyenv }
   - { name: coreutils }
   - { name: git }
   - { name: wget }
@@ -56,9 +55,22 @@ homebrew_packages:
   - { name: tree }
   - { name: nkf }
   - { name: sha2 }
-  - { name: bash }
-  - { name: zsh }
+#  - { name: bash }
+#  - { name: zsh }
   - { name: freetype }
   - { name: argon/mas/mas }
   - { name: ffmpeg }
   - { name: vim, install_options: --with-lua }
+
+add_permission_directories:
+  - { name: /usr/local/bin }
+  - { name: /usr/local/etc }
+  - { name: /usr/local/include }
+  - { name: /usr/local/lib }
+  - { name: /usr/local/sbin }
+  - { name: /usr/local/share }
+  - { name: /usr/local/var }
+  - { name: /usr/local/Frameworks }
+  - { name: /usr/local/var/homebrew }
+
+
