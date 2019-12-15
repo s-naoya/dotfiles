@@ -11,9 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-# for pyenv
-export PYENV_ROOT="${HOME}/.pyenv"
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 # remove brew warning when use pyenv
 alias brew="env PATH=${PATH/\/Users\/naoya\/\.pyenv\/shims:/} brew"
+export HOMEBREW_GITHUB_API_TOKEN=eef8e7e0e04ad498ceb6eeabe747183dc2730b01
+export PATH=$HOME/.nodebrew/current/bin:$PATH
