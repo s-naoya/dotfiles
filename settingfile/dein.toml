@@ -13,6 +13,7 @@ repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
 repo = 'Shougo/neocomplete.vim'
+# repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'

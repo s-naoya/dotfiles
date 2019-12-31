@@ -1,48 +1,55 @@
 ---
 homebrew_taps:
-  - { tap: homebrew/cask-versions }
-  - { tap: homebrew/cask-fonts }
+  # - { tap: homebrew/cask-versions }
+  # - { tap: homebrew/cask-fonts }
   - { tap: sanemat/font }
-  - { tap: kevwil/patches }
-  - { tap: bfontaine/utils }
-  - { tap: caarlos0/antibody }
-  - { tap: caius/jo }
+  # - { tap: kevwil/patches }
+  # - { tap: bfontaine/utils }
+  # - { tap: caarlos0/antibody }
+  # - { tap: caius/jo }
+  - { tap: wtsnjp/tex2img}
 
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
   - { name: google-japanese-ime }
-  - { name: java }
-  - { name: xquartz }
+  # - { name: java }
+  # - { name: xquartz }
   - { name: alfred }
-#  - { name: caffeine}
+  - { name: caffeine}
   - { name: clipy}
-  - { name: thunderbird}
+  # - { name: thunderbird}
   - { name: dropbox}
   - { name: appcleaner}
   - { name: imageoptim}
   - { name: musescore}
   - { name: visual-studio-code}
-  - { name: duet}
   - { name: basictex}
-  - { name: adobe-creative-cloud}
+  # - { name: adobe-creative-cloud}
   - { name: font-ricty-diminished}
-#  - { name: microsoft-office}
-#  - { name: firefox}
-  - { name: vox}
+  # - { name: microsoft-office}
+  # - { name: firefox}
+  # - { name: vox}
   - { name: skim}
   - { name: pycharm }
+  - { name: bettertouchtool}
+  - { name: tex2img }
+  - { name: the-unarchiver }
+  - { name: 1password }
+  # - { name: parallels }  # Version 14がない
+  - { name: coteditor }
+
 
 homebrew_packages:
-  - { name: cask }
   - { name: libxml2 }
   - { name: glib }
-  - { name: fontconfig }
-  - { name: readline }
+  # - { name: fontconfig }  # fc-match
+  - { name: readline }  # python
+  - { name: sqlite }  # python
+  - { name: gdbm }  # python
   - { name: openssl }
-  - { name: python }
+  # - { name: python }
   - { name: python3 }
-  - { name: pyenv }
   - { name: coreutils }
   - { name: git }
   - { name: wget }
@@ -55,12 +62,10 @@ homebrew_packages:
   - { name: tree }
   - { name: nkf }
   - { name: sha2 }
-#  - { name: bash }
-#  - { name: zsh }
   - { name: freetype }
-  - { name: argon/mas/mas }
   - { name: ffmpeg }
-  - { name: vim, install_options: --with-lua }
+  # - { name: vim, install_options: --with-lua }
+  - { name: neovim }
 
 add_permission_directories:
   - { name: /usr/local/bin }

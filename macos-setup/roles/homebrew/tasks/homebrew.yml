@@ -1,41 +1,15 @@
 ---
 ### After "High Sierra", don't change "/usr/local" permission
-#- name: Change /usr/local owner to "{{ ansible_user_id }}"
-#  become: true
-#  become_method: sudo
-#  file:
-#    dest: /usr/local
-#    owner: "{{ ansible_user_id }}"
-#    group: admin
-#    recurse: yes
-#- name: Create /usr/local/include directory
-#  become: true
-#  become_method: sudo
-#  file:
-#    dest: /usr/local/include
-#    owner: "{{ ansible_user_id }}"
-#    group: admin
-#    state: directory
-#
-#- name: Create /usr/local/Framework directory
-#  become: true
-#  become_method: sudo
-#  file:
-#    dest: /usr/local/Framework
-#    owner: "{{ ansible_user_id }}"
-#    group: admin
-#    state: directory
-
-- name: Change /usr/local owner to "{{ ansible_user_id }}"
-  become: true
-  become_method: sudo
-  file:
-    dest: "{{ item.name }}"
-    owner: "{{ ansible_user_id }}"
-    group: admin
-    recurse: yes
-  with_items:
-    - "{{ add_permission_directories }}"
+# - name: Change /usr/local owner to "{{ ansible_user_id }}"
+#   become: true
+#   become_method: sudo
+#   file:
+#     dest: "{{ item.name }}"
+#     owner: "{{ ansible_user_id }}"
+#     group: admin
+#     recurse: yes
+#   with_items:
+#     - "{{ add_permission_directories }}"
 
 - name: Install homebrew
   shell: |
