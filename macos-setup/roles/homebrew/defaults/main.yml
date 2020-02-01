@@ -7,7 +7,6 @@ homebrew_taps:
   # - { tap: bfontaine/utils }
   # - { tap: caarlos0/antibody }
   # - { tap: caius/jo }
-  - { tap: wtsnjp/tex2img}
 
 homebrew_cask_packages:
   - { name: iterm2 }
@@ -33,7 +32,6 @@ homebrew_cask_packages:
   - { name: skim}
   - { name: pycharm }
   - { name: bettertouchtool}
-  - { name: tex2img }
   - { name: the-unarchiver }
   - { name: 1password }
   # - { name: parallels }  # Version 14がない
