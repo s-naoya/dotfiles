@@ -13,29 +13,34 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: google-japanese-ime }
   # - { name: java }
-  # - { name: xquartz }
+  - { name: xquartz }
   - { name: alfred }
   - { name: caffeine}
   - { name: clipy}
   # - { name: thunderbird}
   - { name: dropbox}
   - { name: appcleaner}
-  - { name: imageoptim}
-  - { name: musescore}
+  # - { name: imageoptim}
+  # - { name: musescore}
   - { name: visual-studio-code}
-  - { name: basictex}
+  # - { name: basictex}
   # - { name: adobe-creative-cloud}
   - { name: font-ricty-diminished}
   # - { name: microsoft-office}
   # - { name: firefox}
   # - { name: vox}
-  - { name: skim}
-  - { name: pycharm }
-  - { name: bettertouchtool}
+  # - { name: skim}
+  # - { name: pycharm }
+  # - { name: bettertouchtool}
   - { name: the-unarchiver }
   - { name: 1password }
   # - { name: parallels }  # Version 14がない
   - { name: coteditor }
+  - { name: arduino }
+  - { name: discord }
+  - { name: docker }
+  - { name: drawio }
+  - { name: slack }
 
 
 homebrew_packages:
@@ -64,6 +69,8 @@ homebrew_packages:
   - { name: ffmpeg }
   # - { name: vim, install_options: --with-lua }
   - { name: neovim }
+  - { name: docker }
+  - { name: docker-compose }
 
 add_permission_directories:
   - { name: /usr/local/bin }
