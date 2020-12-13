@@ -32,15 +32,16 @@ homebrew_cask_packages:
   # - { name: skim}
   # - { name: pycharm }
   # - { name: bettertouchtool}
-  - { name: the-unarchiver }
-  - { name: 1password }
-  # - { name: parallels }  # Version 14がない
-  - { name: coteditor }
-  - { name: arduino }
-  - { name: discord }
-  - { name: docker }
-  - { name: drawio }
-  - { name: slack }
+
+
+  # - { name: the-unarchiver }
+  # - { name: 1password }
+  # - { name: coteditor }
+  # - { name: arduino }
+  # - { name: discord }
+  # - { name: docker }
+  # - { name: drawio }
+  # - { name: slack }
 
 
 homebrew_packages:

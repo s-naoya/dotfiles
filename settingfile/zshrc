@@ -18,6 +18,8 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 alias vim='nvim'
 
+source $HOME/.cargo/env
+
 if [ -e "/opt/ros/dashing/setup.zsh" ]; then
     source /opt/ros/dashing/setup.zsh
 fi

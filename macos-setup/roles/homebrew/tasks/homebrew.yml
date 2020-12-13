@@ -42,3 +42,8 @@
     state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ homebrew_packages }}"
+
+- name: Neovim python3
+  shell: |
+    pip3 install neovim
+
