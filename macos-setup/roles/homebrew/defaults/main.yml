@@ -1,7 +1,7 @@
 ---
 homebrew_taps:
   # - { tap: homebrew/cask-versions }
-  # - { tap: homebrew/cask-fonts }
+  - { tap: homebrew/cask-fonts }
   - { tap: sanemat/font }
   # - { tap: kevwil/patches }
   # - { tap: bfontaine/utils }
@@ -10,9 +10,8 @@ homebrew_taps:
 
 homebrew_cask_packages:
   - { name: iterm2 }
-  - { name: google-chrome }
-  - { name: google-japanese-ime }
-  # - { name: java }
+  # - { name: google-chrome }
+  # - { name: google-japanese-ime }
   - { name: xquartz }
   - { name: alfred }
   - { name: caffeine}
@@ -22,10 +21,10 @@ homebrew_cask_packages:
   - { name: appcleaner}
   # - { name: imageoptim}
   # - { name: musescore}
-  - { name: visual-studio-code}
+  # - { name: visual-studio-code}
   # - { name: basictex}
   # - { name: adobe-creative-cloud}
-  - { name: font-ricty-diminished}
+  # - { name: font-ricty-diminished}
   # - { name: microsoft-office}
   # - { name: firefox}
   # - { name: vox}
@@ -35,13 +34,13 @@ homebrew_cask_packages:
 
 
   # - { name: the-unarchiver }
-  # - { name: 1password }
-  # - { name: coteditor }
-  # - { name: arduino }
-  # - { name: discord }
-  # - { name: docker }
-  # - { name: drawio }
-  # - { name: slack }
+  - { name: 1password }
+  - { name: coteditor }
+  - { name: arduino }
+  - { name: discord }
+  - { name: docker }
+  - { name: drawio }
+  - { name: slack }
 
 
 homebrew_packages:
@@ -72,6 +71,9 @@ homebrew_packages:
   - { name: neovim }
   - { name: docker }
   - { name: docker-compose }
+
+  - { name: rust }
+  - { name: node }
 
 add_permission_directories:
   - { name: /usr/local/bin }

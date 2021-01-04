@@ -1,80 +1,54 @@
 Mac OS X Setup
 ==============
+## !!注意!!
+（2021.1.4）Ansibleのhomebrewモジュールにて、アプリ名にハイフンが入るアプリはインストール不可のため、対象アプリはコメントアウト中。
+- 既知のbug。brewコマンド手打ちでインストール可能
 
-* Update system
 
-```bash
-$ sudo softwareupdate --install --recommended
-```
 
-* Change system language
+## 確認済みバージョン
+macOS Big Sur（11.1）
 
-```bash
-$ sudo languagesetup
-$ sudo shutdown -r now
-```
 
-* Tweak caps-lock key to performe ctl key
 
-```text
-1. Open System Preferences
-2. Open Keyboard
-3. Modifiler Keys
-4. Change Caps Lock to Control
-```
+## セットアップ手順
 
-* Tweak Display
-
-```text
-1. Open System Preferences
-2. Open Energy Saver
-3. Turn display off after 15m
-4. Open Display
-5. Max Brightness
-6. Dismiss keyboard brightness
-```
-
-* SIP disable
-For edit permissions of /usr/local
-
-In recovery mode(command + r when boot)
-```bash
-csrutil disable
-```
-If enable
-```bash
-csrutil enable
-```
-
-* Install Xcode
+* Xcodeをインストール
 
 ```bash
 $ xcode-select --install
 ```
 
-* Install [homebrew](http://brew.sh/)
+* [homebrew](http://brew.sh/)をインストール
 
 ```bash
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-* Clone [my mac os x setup repository](https://github.com/NaoyaSaito/dotfiles)
+* Ansibleをインストール
+```bash
+brew install ansible
+```
+
+
+* [dotfiles](https://github.com/s-naoya/dotfiles.git)をクローン
 
 ```bash
-$ git clone https://github.com/NaoyaSaito/dotfiles ~dotfiles
+$ git clone https://github.com/s-naoya/dotfiles.git ~dotfiles
 ```
 
-* Run [Ansible](https://github.com/ansible/ansible)
+
+* [Ansible](https://github.com/ansible/ansible)を実行
 
 ```bash
 $ pip install -r requirements.txt
 $ ./run
 ```
 
-* Manual install
-- BettorSnapTool
-- BetterTouchTool
-- some AppStore app
+* 手動インストール
+    - Affinity
+    - Parallels
+    - some AppStore app
 
 
 <!-- * add japanese input method
@@ -94,7 +68,7 @@ $ ./run
 1. Add firefox/iterm2/slack
 ``` -->
 
-* Change clock date format
+<!-- * Change clock date format -->
 
 <!-- * Automatically hide tool bar -->
 
