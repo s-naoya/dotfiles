@@ -57,7 +57,7 @@ nnoremap <silent><S-e> :NERDTree<CR>
 " deoplete.nvim
 """"""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_delay = 0
+call deoplete#custom#option('auto_complete_delay', 0)
 inoremap <silent><expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 
