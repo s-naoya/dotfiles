@@ -1,8 +1,0 @@
----
-- name: Install go packages
-  shell: |
-    go get {{ item.path }}
-  args:
-    creates: "{{ lookup('env', 'GOPATH') }}/bin/{{ item.name }}"
-  with_items:
-    - "{{ go_packages }}"
