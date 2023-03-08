@@ -31,7 +31,7 @@ SCRIPT_DIR=$(cd $(dirname $0); pwd)
 # ln -fs ./settingfile/vimrc ~/.vimrc
 # ln -fs ./settingfile/dein.toml ~/.dein.toml
 # ln -fs ./settingfile/latexmkrc ~/.latexmkrc
-ln -fsv ./settingfile/nvim ~/.config/nvim
+ln -fsv ${SCRIPT_DIR}/settingfile/nvim ~/.config/nvim
 ln -fsv ~/.zprezto/runcoms/zlogin ~/.zlogin
 ln -fsv ~/.zprezto/runcoms/zlogout ~/.zlogout
 ln -fsv ~/.zprezto/runcoms/zprofile ~/.zprofile

@@ -1,16 +1,13 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
-brew "libxml2"
 brew "glib"
 brew "readline"
 brew "sqlite"
 brew "gdbm"
-brew "openssl"
 brew "coreutils"
 brew "git"
 brew "wget"
-brew "curl"
 brew "cmake"
 brew "autoconf"
 brew "automake"
@@ -24,6 +21,7 @@ brew "ffmpeg"
 brew "docker"
 brew "docker-compose"
 brew "node"
+brew "neovim"
 
 cask "iterm2"
 cask "google-chrome"
@@ -46,6 +44,8 @@ cask "affinity-designer"
 cask "affinity-photo"
 cask "affinity-publisher"
 cask "zoom"
+cask "font-hackgen"
+cask "font-hackgen-nerd"
 
 mas "Slack", id: 803453959
 mas "Keynote", id: 409183694

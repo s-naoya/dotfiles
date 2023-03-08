@@ -122,6 +122,9 @@ nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
 
+nnoremap L $
+nnoremap H ^
+
 
 
 " ペースト時無駄自動インデント防止

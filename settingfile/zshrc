@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 # remove brew warning when use pyenv
 alias brew="env PATH=${PATH/\/Users\/naoya\/\.pyenv\/shims:/} brew"
-export HOMEBREW_GITHUB_API_TOKEN=eef8e7e0e04ad498ceb6eeabe747183dc2730b01
+export HOMEBREW_GITHUB_API_TOKEN=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
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 alias vim='nvim'
